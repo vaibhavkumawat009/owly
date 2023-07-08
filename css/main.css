@@ -1,81 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.first{
+
+.first {
     margin-top: 30px;
     margin-left: 100px;
     margin-right: 100px;
     /* display: flex; */
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 
 }
-.logo{
+
+.logo {
     height: 85%;
     width: 80%;
-   
+
 }
 
-.button{
+.button {
     margin-top: 20px;
 }
 
-.side-heading{
+.side-heading {
     font-family: 'Cookie', cursive;
     font-size: 100px;
 }
 
-.second{
+.second {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.chef{
+.chef {
     height: 460px;
     width: 500px;
     border-radius: 50%;
 }
-span{
-    color: #1B1A1A ;
+
+span {
+    color: #1B1A1A;
 }
 
-.text{
+.text {
     font-size: 20px;
 }
 
-.side-content{
+.side-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
-   
+
 }
 
-.menu{
+.menu {
     width: 50%;
     height: 10%;
     border-radius: 262px;
     background-color: rgb(37, 37, 37);
     color: white;
     box-shadow: none;
-   
-   
+
+
 }
 
-.foods{
+.foods {
     display: flex;
-    /* margin: 10px;  */
+    justify-content: space-between;
+
+
+    /*margin: 100px;*/
+    height: 60vh;
+    width: 84vw;
+    margin-top: 20px;
+    overflow: auto;
+
 }
 
-#img2{
-    width: 200px;
-    margin: 10px;
-    border-radius: 30px;
+
+.foods img {
+    height: 100%;
+}
+
+#two.text{
+    height: 100px;
+    width: 100px;
+}
+
+
+.foods img:hover {
+    height: 350px;
+    transition: transform 0.5 ease-out;
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .foods {
+        display: flex;
+        flex-direction: column;
+        overflow: unset;
+        widhth: 100%;
+    }
+.foods img{
+    widhth:100vw
+}
 }
